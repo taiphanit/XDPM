@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebApplication2.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Blog asp.net</title>
+	<link href="Themes/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" method="get">
+		    	<asp:Button ID="Button1" runat="server" Text="Button"  />
+
+        <div id="menutop">
+			<div id="menu">
+				<ul>
+					<li><a href="index.aspx">Trang Chủ</a></li>
+					<li><a href="Login.aspx">Đăng Nhập</a></li>
+					<li><a href="#">Tin Tức</a></li>
+
+	
+				</ul>
+			</div>
+			</div>
+		<div id="maincontent">
+			<div id="rightcontent">
+				<h1>tiêu đề phải</h1>
+				<div id="ndright">
+					<table width="150px" height="200px" border="1">
+					<tr>
+						<td id="list"><asp:Label ID="outdataloaixe" runat="server" Text=""></asp:Label></td>
+					</tr>
+					</table>
+				
+				</div>
+
+        			</div>
+						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<div id="footer">
+		<div id="ndfooter">
+			Copyright - liên hệ qua email:tvkiet4@gmail.com
+		</div>
+			</div>
+    </form>
+</body>
+</html>
